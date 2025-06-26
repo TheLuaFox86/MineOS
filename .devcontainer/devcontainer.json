@@ -1,4 +1,16 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/ubuntu:latest",
-  "features": {}
+  "name": "Debian XFCE Codespace",
+  "image": "accetto/debian-vnc-xfce-vscode-g3",
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {}
+  },
+   "postCreateCommand": "echo 'Debian XFCE Codespace configured!'",
+   "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-python.python"
+      ]
+    }
+  }
 }
